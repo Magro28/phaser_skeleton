@@ -15,9 +15,10 @@ Open http://localhost:8080 in your browser.
 - Make a space invaders clone (look at the link below)
 - Polish the game with sounds, music and graphics
 
-##Links
+##Documentation
 - http://phaser.io
-- http://phaser.io/docs/2.5.0/index
+- http://phaser.io/docs/2.5.0/index Important!
+- http://phaser.io/learn/chains
 - http://phaser.io/examples/v2/games/invaders
 
 ##Resources
