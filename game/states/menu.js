@@ -9,12 +9,12 @@ Menu.prototype = {
   create: function() {
     var style = {
       font: '40px Arial',
-      fill: '#ffffff',
+      fill: '#f00d0d',
       align: 'center'
     };
-    this.sprite = this.game.add.sprite(this.game.world.centerX, 138,
-      'sfnlogo');
-    this.sprite.anchor.setTo(0.5, 0.5);
+
+    this.background = this.game.add.tileSprite(0, 0, 800, 600, 'background0');
+    this.background.fixedToCamera = true;
 
     this.titleText = this.game.add.text(this.game.world.centerX, 300,
       'Welcome to the SFN Hacking Afternoon', style);
@@ -23,17 +23,15 @@ Menu.prototype = {
     this.instructionsText = this.game.add.text(this.game.world.centerX, 400,
       'click to start', {
         font: '16px Arial',
-        fill: '#ffffff',
+        fill: '#0000FF',
         align: 'center'
       });
     this.instructionsText.anchor.setTo(0.5, 0.5);
 
-    this.sprite.angle = -20;
-    this.game.add.tween(this.sprite).to({
-      angle: 20
-    }, 1000, Phaser.Easing.Linear.NONE, true, 0, 1000, true);
   },
   update: function() {
+    this.background.tilePosition.x += 0.1;
+
     if (this.game.input.activePointer.justPressed()) {
       this.game.state.start('levelSelection');
     }

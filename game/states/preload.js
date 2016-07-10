@@ -18,7 +18,7 @@ Preload.prototype = {
     this.load.spritesheet('player', 'assets/img/ships/UFO.png', 32, 32, 4);
     this.load.image('bullet', 'assets/img/shmup-bullet.png');
     this.load.image('buttonlevel1', 'assets/img/button.png');
-
+    this.load.image('background0', 'assets/img/background/CitySunset.jpg');
   },
   create: function() {
     this.asset.cropEnabled = false;
