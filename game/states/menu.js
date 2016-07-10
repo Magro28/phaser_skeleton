@@ -16,8 +16,11 @@ Menu.prototype = {
     this.background = this.game.add.tileSprite(0, 0, 800, 600, 'background0');
     this.background.fixedToCamera = true;
 
+    this.music = this.game.add.audio('titlemusic');
+    this.game.sound.setDecodedCallback(this.music, this.startMusic, this);
+
     this.titleText = this.game.add.text(this.game.world.centerX, 300,
-      'Welcome to the SFN Hacking Afternoon', style);
+      'Generic Game Title', style);
     this.titleText.anchor.setTo(0.5, 0.5);
 
     this.instructionsText = this.game.add.text(this.game.world.centerX, 400,
@@ -28,6 +31,9 @@ Menu.prototype = {
       });
     this.instructionsText.anchor.setTo(0.5, 0.5);
 
+  },
+  startMusic: function() {
+    this.music.loopFull();
   },
   update: function() {
     this.background.tilePosition.x += 0.1;

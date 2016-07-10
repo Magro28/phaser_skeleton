@@ -19,6 +19,8 @@ Preload.prototype = {
     this.load.image('bullet', 'assets/img/shmup-bullet.png');
     this.load.image('buttonlevel1', 'assets/img/button.png');
     this.load.image('background0', 'assets/img/background/CitySunset.jpg');
+
+    this.load.audio('titlemusic', ['assets/sounds/BoxCat_Games_-_03_-_Battle_Special.mp3']);
   },
   create: function() {
     this.asset.cropEnabled = false;

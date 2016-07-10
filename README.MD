@@ -1,4 +1,4 @@
-#SFN Hacking Afternoon
+#Phaser Skeleton
 
 Small example project for the SFN Hacking Afternoon
 
