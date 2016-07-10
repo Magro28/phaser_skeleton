@@ -1,21 +1,11 @@
 #Phaser Skeleton
 
-Small example project for the SFN Hacking Afternoon
+A phaser skeleton with a nice project structure and examples for title screen, level selection and game stages. Also has some free game assets included.
 
 ##Start the Server
-with installed npm http Server goto this directory in the terminal and execute the following command:
+Start with a http server of your choice
 
-http-server
-
-Open http://localhost:8080 in your browser.
-
-##Things you could do
-- Make a nice title screen
-- Make a level selection screen
-- Make a space invaders clone (look at the link below)
-- Polish the game with sounds, music and graphics
-
-##Documentation
+##Documentation of Phaser
 - http://phaser.io
 - http://phaser.io/docs/2.5.0/index Important!
 - http://phaser.io/learn/chains
